@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice App</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="firstprac.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!--This is for the favicon.-->
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-[#1f2632] flex justify-center items-center min-h-screen px-6 sm:p-0"
+  >
+    <div
+      class="bg-[#323a49] w-full max-w-md shadow-lg p-4 flex flex-col justify-center items-center rounded-2xl space-y-4 text-center pb-16 relative"
+    >
+      <p class="text-[#52ffa8] uppercase text-xs font-semibold" id="id"></p>
+      <p
+        class="text-gray-200 font-bold text-xl leading-relaxed w-full max-w-xs"
+        id="advice"
+      ></p>
+      <div class="w-full flex justify-center">
+        <img class="hidden md:block" src="/" alt="" />
+        <!--There should be a divider image here-->
+      </div>
+      <div class="w-full flex justify-center">
+        <img class="block: md:hidden" src="/" alt="mobile-pattern" />
+        <!--There should be a divider image here-->
+      </div>
+      <button
+        class="bg-[#52ffa8] p-4 rounded-full absolute -bottom-6 opacity-75 hover:opacity-100"
+        id="btn"
+      >
+        <!--Hack for hover-->
+        <!--To make the button stay exactly on the line, we make this container absolute and the parent container relative, then do -bottom-6. Then -bottom-6 makes it stay exactly at the bottom.-->
+        <img src="/" alt="d" />
+        <!--Icon dice image goes here-->
+      </button>
+    </div>
+  </body>
+</html>
