@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519206/logo_rwta9t.svg"
+    />
+    <style>
+      body {
+        font-family: "Bai Jamjuree", sans-serif;
+        font-weight: 300;
+      }
+      .social-icon:hover {
+        filter: invert(37%) sepia(93%) saturate(1352%) hue-rotate(222deg)
+          brightness(101%) contrast(101%);
+      }
+      .hero {
+        position: relative;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 90%;
+        background: linear-gradient(to bottom, transparent, white);
+      }
+
+      h1 {
+        color: hsl(210, 10%, 33%);
+      }
+
+      p {
+        color: hsl(201, 11%, 66%);
+      }
+    </style>
+  </head>
+  <body class="flex flex-col items-center justify-center">
+    <div class="max-w-sm md:max-w-[1400px]">
+      <!-- The div above is the overall container -->
+      <section
+        class="px-8 pt-24 bg-[url('https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519204/bg-header-mobile_gj3zxt.png')] bg-no-repeat bg-top md:bg-[url('https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519205/bg-header-desktop_df2dkc.png')] bg-no-repeat"
+      >
+        <!--The first section-->
+        <div class="flex justify-center mb-16">
+          <!-- above is the Div of the image-->
+          <img
+            class="h-24 w-24"
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776514420/logo_t7naga.svg"
+            alt=""
+          />
+        </div>
+        <!-- Div for the text in the first section -->
+        <div class="mb-12">
+          <h1 class="font-semibold text-[30px] text-center leading-tight">
+            A history of everything you copy
+          </h1>
+          <p class="font-light text-center mt-3 px-2 lg:px-[400px]">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+        </div>
+        <!-- Div for the buttons -->
+        <div
+          class="flex flex-col gap-5 items-center md:flex-row justify-center"
+        >
+          <button
+            class="bg-[#26bba5] shadow-lg shadow-emerald-300/50 w-[320px] py-3 px-16 rounded-full border-b-2 border-[#309681] text-white duration-300 hover:bg-[#309681] hover:scale-105 active:bg-[#309681] active:scale-105:"
+          >
+            Download for IOS
+          </button>
+          <button
+            class="bg-[#6174ff] shadow-lg shadow-indigo-300/50 w-[320px] py-3 px-16 rounded-full border-b-2 border-[#4f62da] text-white duration-300 hover:bg-[#4f62da] hover:scale-105 active:bg-[#4f62da] active:scale-105:"
+          >
+            Download for Mac
+          </button>
+        </div>
+      </section>
+
+      <section class="mt-40 p-8 md:p-0 pr-8">
+        <div>
+          <!-- Keep track-->
+          <h1 class="font-semibold text-[25px] text-center leading-tight">
+            Keep track of your snippets
+          </h1>
+          <p
+            class="font-light text-center mt-3 px-1 md:px-[130px] lg:px-[400px]"
+          >
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
+
+        <div class="md:grid grid-cols-2 gap-24">
+          <!--Div to make the grid-->
+          <div class="mt-12">
+            <img
+              src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519207/image-computer_nxicbu.png"
+              alt=""
+            />
+          </div>
+
+          <div class="md:pr-[80px] lg:pr-[300px]">
+            <!-- Div of the container for the text on the right.-->
+            <div class="mt-12 text-center md:text-left">
+              <h1 class="font-semibold text-[25px] leading-tight">
+                Quick Search
+              </h1>
+              <p class="font-light mt-3 px-1">
+                Easily search your snippets by content, category, web address,
+                application and more.
+              </p>
+            </div>
+
+            <div class="mt-12 text-center md:text-left">
+              <h1 class="font-semibold text-[25px] leading-tight">
+                iCloud Sync
+              </h1>
+              <p class="font-light mt-3 px-2">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+
+            <div class="mt-12 text-center md:text-left">
+              <h1 class="font-semibold text-[25px] leading-tight">
+                Complete history
+              </h1>
+              <p class="font-light mt-3 px-1">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-40 px-8">
+        <div>
+          <!-- ACCESS CLIPBOARD     -->
+          <h1 class="font-semibold text-[25px] text-center leading-tight">
+            Access Clipboard Anywhere
+          </h1>
+          <p class="font-light text-center mt-3 px-1 lg:px-[350px]">
+            Whether you're on the go, or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks
+          </p>
+        </div>
+
+        <div class="mt-12 lg:flex align-items justify-center">
+          <img
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519207/image-devices_c1ipjy.png"
+            alt=""
+          />
+        </div>
+
+        <div class="mt-12">
+          <h1 class="font-semibold text-[25px] text-center leading-tight">
+            Supercharge your workflow
+          </h1>
+          <p class="font-light text-center mt-3 px-1">
+            We've got the tools to boost your productivity.
+          </p>
+        </div>
+
+        <div class="lg:flex gap-10">
+          <!-- div of the 3 undersupercharge-->
+          <div class="mt-12 lg:w-1/3">
+            <div class="flex justify-center mb-8">
+              <img
+                src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519204/icon-blacklist_c8skap.svg"
+                alt=""
+              />
+            </div>
+            <h1 class="font-semibold text-[25px] text-center leading-tight">
+              Create blacklists
+            </h1>
+            <p class="font-light text-center mt-3 px-1">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:w-1/3">
+            <div class="flex justify-center mb-8">
+              <img
+                src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519205/icon-text_wcvspy.svg"
+                alt=""
+              />
+            </div>
+            <h1 class="font-semibold text-[25px] text-center leading-tight">
+              Plain text snippets
+            </h1>
+            <p class="font-light text-center mt-3 px-1">
+              Remove unwanted formatting from copied text for a consitent look.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:w-1/3">
+            <div class="flex justify-center mb-8">
+              <img
+                src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519205/icon-preview_zkci1a.svg"
+                alt=""
+              />
+            </div>
+            <h1 class="font-semibold text-[25px] text-center leading-tight">
+              Sneak preview
+            </h1>
+            <p class="font-light text-center mt-3 px-1">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION FOR TRUST ICONS -->
+      <section
+        class="mt-40 flex flex-col gap-16 px-8 lg:flex-row justify-around items-center"
+      >
+        <div class="flex justify-center">
+          <img
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519207/logo-google_juxfei.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519207/logo-ibm_qsptpo.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center h-15 w-15">
+          <img
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519207/logo-microsoft_k8r6h5.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519207/logo-hp_uykvdi.png"
+            alt=""
+          />
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519207/logo-vector-graphics_b4pvqu.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="mt-40 px-8">
+        <div class="mb-12">
+          <h1 class="font-semibold text-[30px] text-center leading-tight">
+            Clipboard for iOS and Mac OS
+          </h1>
+          <p class="font-light text-center mt-3 px-2 lg:px-[340px]">
+            Available for free on the App Store. Download for Mac or iOS, sync
+            with iCloud and you're ready to start adding to your clipboard.
+          </p>
+        </div>
+        <!-- Div for the buttons -->
+        <div
+          class="flex flex-col gap-5 items-center lg:flex-row justify-center"
+        >
+          <button
+            class="bg-[#26bba5] shadow-lg shadow-emerald-300/50 w-[320px] py-3 px-16 rounded-full border-b-2 border-[#309681] text-white duration-300 hover:bg-[#309681] hover:scale-105 active:bg-[#309681] active:scale-105:"
+          >
+            Download for IOS
+          </button>
+          <button
+            class="bg-[#6174ff] shadow-lg shadow-indigo-300/50 w-[320px] py-3 px-16 rounded-full border-b-2 border-[#4f62da] text-white duration-300 hover:bg-[#4f62da] hover:scale-105 active:bg-[#4f62da] active:scale-105:"
+          >
+            Download for Mac
+          </button>
+        </div>
+      </section>
+    </div>
+    <footer class="mt-40 w-full py-12 bg-[#f5f6f8] lg:flex justify-around">
+      <div class="flex justify-center mb-12">
+        <!-- above is the Div of the image-->
+        <img
+          class="h-14 w-14"
+          src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776514420/logo_t7naga.svg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="flex flex-col text-center gap-6 mb-12 lg:grid grid-cols-3 grid-row-2 lg:text-left"
+      >
+        <a class="hover:text-[#6174ff] col-start-1" href="/">FAQs</a>
+        <a class="hover:text-[#6174ff] lg:col-start-1" href="/">Contact Us</a>
+        <a class="hover:text-[#6174ff] row-start-1 col-start-2" href=""
+          >Privacy Policy</a
+        >
+        <a class="hover:text-[#6174ff] col-start-2" href="">Press Kit</a>
+        <a class="hover:text-[#6174ff] col-start-3 row-start-1" href=""
+          >Install Guide</a
+        >
+      </div>
+
+      <div class="flex justify-center gap-10">
+        <a href="/">
+          <img
+            class="social-icon cursor-pointer"
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519204/icon-facebook_xe3tbc.svg"
+            alt=""
+        /></a>
+        <a href="/">
+          <img
+            class="social-icon cursor-pointer"
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519206/icon-twitter_g3cozy.svg"
+            alt=""
+          />
+        </a>
+        <a href="">
+          <img
+            class="social-icon cursor-pointer"
+            src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1776519204/icon-instagram_tz9tyd.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

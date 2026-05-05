@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  color: white;
+  /* flex-direction:column-reverse; */
+  gap: 200px;
+  flex-wrap: wrap; /* This is for responsiveness */
+  margin-bottom: 30px;
+}
+
+.item1 {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+}
+.item2 {
+  background-color: maroon;
+  width: 100px;
+  height: 100px;
+}
+.item3 {
+  background-color: darkslategray;
+  width: 100px;
+  height: 100px;
+}
+.item4 {
+  background-color: violet;
+  width: 100px;
+  height: 100px;
+}
+
+.parent {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+.align {
+  display: flex;
+  gap: 9px;
+  height: 200px;
+  align-items: flex-start; /* It needs height to work */
+  border: 1px solid red; /* Did this so we can see how it is aligning*/
+  margin-bottom: 30px;
+}
+
+.box {
+  padding: 30px;
+  background-color: lightblue;
+}
+
+.layout {
+  display: flex;
+  height: 100vh; /* Vh stands for viewport height and it refers to the height of the entire visible screen */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: black;
+  color: white;
+}
+
+.content {
+  background-color: grey;
+  color: white;
+  flex: 1; /* Without this the maincontent won't occupy the right side of the screen */
+}
+
+.center {
+  display: flex;  
+  height: 100vh;
+  justify-content: center; /* Aligns horizontally. In this case it is horizontally */
+  align-items: center; /* Aligns to center vertically */
+}
+
+

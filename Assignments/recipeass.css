@@ -1,0 +1,100 @@
+body {
+  max-width: 1440px;
+  padding: 20px 150px 20px 150px;
+  /* THIS CENTERS THEM HORIZONTALLY */
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* before it was horizontal, this helped everything become center*/
+} 
+
+.image {
+  display: flex;
+}
+img {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+}
+
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(73, 72, 72);
+}
+
+.preptime {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px 40px 20px 40px;
+  border-radius: 20px;
+}
+
+.ingredients {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.instructions {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.nutrition {
+  margin-bottom: 20px;
+}
+
+.row {
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: 1px solid #e3e3e3;
+  color: rgb(124, 124, 124);
+}
+
+#col {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.Inline-block {
+  /* Inline block makes them side by side while normal block makes them on top of each other*/
+  display: inline-flex;
+  width: 49%;
+  height: 40px;
+  align-items: center;
+}
+
+

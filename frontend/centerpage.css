@@ -1,0 +1,20 @@
+body{ /*This centers everything on the page*/
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.container{ /*This is how to center something on the page. This code centers box within the .container
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}*/
+
+.box{
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 300px;
+}

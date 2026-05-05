@@ -1,0 +1,91 @@
+.box1 {
+  background-color: darkgoldenrod;
+  color: white;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  padding: 20px; /* This is the sign for commenting */
+  margin: 20px; /* Margin-bottom dey sef */
+}
+
+.block1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  display: block;
+}
+
+.block2 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(87, 13, 13);
+  display: block;
+}
+
+.Inline {
+  background-color: rgb(1, 61, 189);
+  display: inline;
+}
+
+.Inline-block{  /* Inline block makes them side by side while normal block makes them on top of each other*/
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.none{
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+    display: none;
+}
+
+.static{
+    width:100px;
+    height:100px;
+    background-color: rgb(67, 20, 94);
+    position: static;
+    margin-bottom: 10px;
+}
+
+.relative{
+    width:100px;
+    height:100px;
+    background-color: sandybrown;
+    position: relative;
+    top: 20px;
+    left: 60px;  /* you can start using top left bottom right only after putting relative position*/
+}
+
+.parent{
+    width:300px;
+    height:300px;
+    background-color: orange;
+    position: relative;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute; /* This helps use top bottom right left that will be relative to the parent box with the relative posistion value*/
+    left: 100px;
+    top: 40px;
+}
+
+nav{
+    background-color: pink;
+    position: fixed; /* This means when you scroll the navbar will still show on top because of postion fixed*/
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.sticky{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    position: sticky;
+    top: 0; /* This the reason why you scroll and it sticks to the top */
+}

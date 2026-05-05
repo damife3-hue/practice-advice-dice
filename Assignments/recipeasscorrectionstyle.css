@@ -1,0 +1,104 @@
+body {
+  background-color: #f3e5d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(73, 72, 72);
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  padding: 30px;
+  width: 100%; /*This makes the content stretch to its full width no matter the screen size. 
+  the max width helps to limit how far it should stretch */
+  border-radius: 10px;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto; /* This tells the img to adjust no matter the screen size */
+  display: block; /* you don't really need it per se, you can remove it if you want. display is block automatically */
+}
+
+section {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+}
+
+.prep {
+  background-color: hsl(330, 100%, 98%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.prep h2 {
+  color: #84435d;
+}
+
+ul > li {
+  margin-top: 12px;
+}
+
+ol > li {
+  margin-top: 12px;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+.table {
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.row p {
+  margin: 0px;
+}
+
+/* The first child here affects the first p tag */
+.row p:first-child {
+  color: #555;
+}
+
+/* The last child here affects the second p tag */
+.row p:last-child {
+  font-weight: bold;
+  color: #7b3f2a;
+}

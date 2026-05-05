@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jokes.js" defer></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Unkempt", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .hero {
+          background-image: url("https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1777954672/mobile_laugh_v1_itea3a.png");
+          background-position: center bottom;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        @media (min-width: 640px) {
+          .hero {
+            background-image: url("https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1777954672/bgyyellow_csjwnq.png");
+            background-position: center top;
+            
+          }
+        }
+    </style>
+  </head>
+  <body
+    class="bg-[#622100] hero flex justify-center items-center min-h-screen px-6 sm:p-0">
+    <div
+      class="w-full max-w-md shadow-lg text-center rounded-2xl flex flex-col justify-center items-center gap-4 p-4 pb-16 relative"
+    >
+      <p class="font-extrabold text-4xl">Try not to Laugh!</p>
+      <p class="text-white font-semibold text-lg" id="joketext">
+        What did the lazy surgeon say to his patient? Suture self!
+      </p>
+
+      <div class="hidden md:block">
+        <!--Desktop divider-->
+        <img
+          src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1777903638/pattern-divider-desktop_wiub5t.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="md:hidden">
+        <!--Moblie Divider-->
+        <img
+          src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1777903638/pattern-divider-mobile_jdpatn.svg"
+          alt=""
+        />
+      </div>
+
+      <button
+        class="bg-[#622100] rounded-full p-4 absolute -bottom-6 opacity-75 hover:opacity-100"
+        id="btn"
+      >
+        <img class="invert"
+          src="https://res.cloudinary.com/dl1ynr1x5/image/upload/q_auto/f_auto/v1777903638/icon-dice_o2gwc9.svg"
+          alt=""
+        />
+      </button>
+    </div>
+  </body>
+</html>

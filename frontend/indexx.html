@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <table border="2">
+      <tr>
+        <th>name</th>
+        <th>Email</th>
+      </tr>
+
+      <tr>
+        <td>Fish</td>
+        <td>Fish@gsm</td>
+      </tr>
+    </table>
+
+    <div style="background-color: blue">I am a guy</div>
+
+    <span style="background-color: red"> Hello There </span>
+
+    <div>
+      <p>I am a <span style="background-color: green"> green </span> boy</p>
+    </div>
+
+    <ul>
+      <li>Beans</li>
+      <li>Semo</li>
+    </ul>
+
+    <ol>
+      <li>Rice</li>
+      <li>Stew</li>
+    </ol>
+
+    <!--  The below are examples of semantic tags.
+    <header>
+        <nav>
+            <main>
+                <section>
+                    <article>
+                        <footer>
+
+                        </footer>
+                    </article>
+                </section>
+            </main>
+        </nav>
+    </header>
+        -->
+
+    <form action="/submit" method="get">
+      <!-- "get" is going to show the password in the url. It is used to showcase information to the browser.-->
+      <input type="password" name="username" placeholder="Enter your name" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <form action="/submit" method="post">
+      <!-- Post hides information. so it won't show in the url. -->
+      <input type="password" name="username" placeholder="Enter your name" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
